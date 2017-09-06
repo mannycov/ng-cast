@@ -1,5 +1,16 @@
-angular.module('video-player')
+angular.module('video-player', [])
+  .component('app', {
+    controller: function() {
+      this.selectVideo = () => {
 
-.component('app', {
-  // TODO
-});
+      };
+      this.searchResults = () => {
+
+      };
+
+      this.currentVideo = window.exampleVideoData[0];
+      this.videos = window.exampleVideoData;
+
+    },
+    templateUrl: 'src/templates/app.html'
+  });
